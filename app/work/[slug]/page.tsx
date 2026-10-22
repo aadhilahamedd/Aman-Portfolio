@@ -114,13 +114,16 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           />
         </CaseMedia>
 
-        <p
-          className={`mt-10 max-w-2xl text-lg leading-relaxed ${
-            descriptionNeeded ? "italic text-muted" : "text-ink/90"
-          }`}
-        >
-          {project.description}
-        </p>
+        <div className="mt-10 max-w-xl border-t border-line pt-6">
+          <p className="text-[0.68rem] uppercase tracking-[0.18em] text-muted">Description</p>
+          <p
+            className={`mt-3 font-sans text-[0.98rem] font-normal not-italic leading-7 tracking-normal ${
+              descriptionNeeded ? "text-muted" : "text-ink/90"
+            }`}
+          >
+            {project.description}
+          </p>
+        </div>
 
         {project.credits && project.credits.length > 0 ? (
           <dl className="mt-10 grid max-w-2xl gap-4 border-t border-line pt-8 sm:grid-cols-2">

@@ -40,7 +40,8 @@ export const projects: Project[] = [
     slug: "cinematic-05",
     title: "Cinematic 05",
     category: "Cinematic",
-    description: notes,
+    description:
+      "Official trailer for NERAM by Nazeeb Billu ft. Laika Jamal, presented by Fift4collective. Edited to introduce the music video through carefully timed cuts, cinematic visuals, and a focused build-up.",
     thumbnail: "/media/cinematic/work-5.jpg",
     videoSrc: "/media/cinematic/work-5.mp4",
     featured: true,
@@ -100,7 +101,8 @@ export const projects: Project[] = [
     slug: "cinematic-01",
     title: "Cinematic 01",
     category: "Cinematic",
-    description: notes,
+    description:
+      "A fast-paced automotive edit combining precise cuts, rhythmic pacing, and dynamic shot transitions to emphasize the car’s movement, details, and visual appeal.",
     thumbnail: "/media/cinematic/work-1.jpg",
     videoSrc: "/media/cinematic/work-1.mp4",
     featured: true,

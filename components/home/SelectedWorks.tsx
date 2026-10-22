@@ -13,6 +13,11 @@ export function SelectedWorks({ projects }: { projects: Project[] }) {
   const cinematic = projects.filter(
     (project) => project.orientation === "landscape" && (filter === "All" || project.category === filter),
   );
+  const featuredAutomotive = cinematic.findIndex((project) => project.slug === "cinematic-01");
+  if (featuredAutomotive > 1) {
+    const [film] = cinematic.splice(featuredAutomotive, 1);
+    cinematic.splice(1, 0, film);
+  }
   const portrait = projects.filter(
     (project) => project.orientation === "portrait" && (filter === "All" || project.category === filter),
   );
